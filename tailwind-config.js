@@ -5,9 +5,14 @@ tailwind.config = {
         sans: ['Inter', 'sans-serif'],
       },
       colors: {
-        primary: '#0f1724', 
-        accent: '#ff9900', 
-        muted: '#6b7280'   
+        primary: '#0f1724',
+        accent: '#ff9900',
+        muted: '#6b7280',
+        'primary-blue': '#1a237e',
+        'accent-orange': '#ff9800',
+        'sale-red': '#f44336',
+        'border-cyan': '#80deea',
+        'light-bg': '#e0f7fa',
       },
       screens: {
         'xxs': '360px',

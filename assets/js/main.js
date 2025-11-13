@@ -209,7 +209,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function adjustIconsForWidth() {
     try {
-      if (window.innerWidth <= 843) moveToMobile(); else restoreToHeader();
+      if (window.innerWidth <= 1024) moveToMobile(); else restoreToHeader();
     } catch (e) {
       // swallow errors silently
       console.error('Icon move error', e);
