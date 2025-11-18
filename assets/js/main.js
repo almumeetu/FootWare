@@ -21,7 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
       mobileMenu.classList.remove('opacity-100', 'translate-y-0', 'scale-100');
       mobileMenu.classList.add('opacity-0', 'translate-y-1', 'scale-95');
       // force reflow then add open classes
-      // eslint-disable-next-line @mystudio/no-unused-expr
       mobileMenu.getBoundingClientRect();
       mobileMenu.classList.remove('opacity-0', 'translate-y-1', 'scale-95');
       mobileMenu.classList.add('opacity-100', 'translate-y-0', 'scale-100');
@@ -174,7 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!item.wrapperContainer) {
         // create a mobile-friendly wrapper and move the node into it
         const row = document.createElement('div');
-        row.className = 'mobile-moved-item relative w-full flex items-center justify-between p-2 rounded-md hover:bg-gray-50';
+        row.className = 'mobile-moved-item relative w-full flex items-center justify-between p-2 rounded-none hover:bg-gray-50';
         // move the original node into the row
         row.appendChild(item.node);
         item.wrapperContainer = row;
